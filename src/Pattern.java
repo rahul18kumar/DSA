@@ -150,7 +150,7 @@ public class Pattern {
 //            for (int j = 1; j <= i-1 ; j++) {
 //                System.out.print("  ");
 //            }
-//            for (int j = 1; j <= 2*x-i-(i-1) ; j++) {
+//            for (int j = 1; j <= 2*x-i-i+1) ; j++) {
 //                System.out.print("* ");
 //            }
 //            System.out.println(" ");
@@ -201,37 +201,156 @@ public class Pattern {
 
         //Q11.   Butterfly Pattern
 
+//        int n=4;
+//        for (int row = 1; row <=n ; row++) {
+////            part 1
+//            for (int col = 1; col <= row ; col++) {
+//                System.out.print("* ");
+//            }
+////            part 2
+//            for (int col = 1; col <=2*(n-row) ; col++) {
+//                System.out.print("  ");
+//            }
+////            part 3
+//            for (int col = 1; col <=row ; col++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+////        part 4
+//        for (int row = 1; row <=n ; row ++) {
+//            for (int col = 1; col <= n-row+1; col++) {
+//                System.out.print("* ");
+//            }
+//
+////            part 5
+//            for (int col = 1; col <= 2*(row-1) ; col++) {
+//                System.out.print("  ");
+//            }
+////            part 6
+//            for (int col = 1; col <= n-row+1 ; col++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+
+
+        //Q12. Right angled triangle numeric pattern
+//        int n=5;
+//        for (int row = 1; row <= n; row++) {
+//            for (int col = 1; col <= row ; col++) {
+//                System.out.print(col+" ");
+//            }
+//            System.out.println();
+//        }
+
+////        Q13. same as above but printing the value of count sequentially
+//        int n = 6;
+//        int count = 1;
+//        for (int row = 1; row <=n ; row++) {
+//            for (int col = 1; col < row ; col++) {
+//                System.out.print(count+" ");
+//                count++ ;
+//            }
+//            System.out.println();
+//        }
+
+//        Q14. Have to print right angled triangle but withn Alphabetical values
+//        int n=6;
+//        for (int row = 1; row <=n ; row++) {
+//            for (int col = 1; col <=row ; col++) {
+//                int prev =  'A'- 1 + col;
+//                char res = (char)prev;
+//                System.out.print(res + " ");
+//            }
+//            System.out.println();
+//        }
+        //Q15. same as q14 but reverse of that
+//
+//       int n = 5;
+//        for (int row = 1; row <=n ; row++) {
+//            for (int col = 1; col <= row ; col++) {
+//                int a = n-col;
+//                int b= 'A';
+//                int prev = a+b;
+//                char res = (char)prev;
+//                System.out.print(res + " ");
+//            }
+//            System.out.println();
+//        }
+//
+//        Q16. Iverted puramid + normal
+//
+//        int n=4;
+//        for (int row = 1; row <=n ; row++) {
+//            for (int col = 1; col <=row-1 ; col++) {
+//                System.out.print("  ");
+//            }
+//            for (int col = 1; col <= 2*n-row-row+1 ; col++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//        for (int row = 1; row <=n-1 ; row++) {
+//            for (int col = 1; col <=n-row-1 ; col++) {
+//                System.out.print("  ");
+//            }
+//            for (int col = 1; col <=2*row+1 ; col++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+//        Q17.Pyramid with numbers
+//        int n =4;
+//        for (int row = 1; row <=n ; row++) {
+////            part 1
+//            for (int col = 1; col <=n-row ; col++) {
+//                System.out.print("  ");
+//            }
+////            part 2
+//            for (int col = 1; col <= row ; col++) {
+//                System.out.print(col+" ");
+//            }
+////            part 3
+//            int decrementVal = row-1;
+//            for (int col = 1; col <= row - 1 ; col++) {
+//                System.out.print(decrementVal +" ");
+//                decrementVal--;
+//            }
+//            System.out.println();
+//        }
+        //Q18. Pyramid with numbers another type
+//        int n=4;
+//        for (int row = 1; row <=n ; row++) {
+//            for (int col = 1; col <=n-row ; col++) {
+//                System.out.print("  ");
+//            }
+//            for (int col = 1; col <= 2*row-1 ; col++) {
+//                System.out.print (row +" ");
+//            }
+//            System.out.println();
+//        }
+        //Q19. Pyramid with alphabets
         int n=4;
         for (int row = 1; row <=n ; row++) {
-//            part 1
-            for (int col = 1; col <= row ; col++) {
-                System.out.print("* ");
-            }
-//            part 2
-            for (int col = 1; col <=2*(n-row) ; col++) {
+            for (int col = 1; col <=n-row ; col++) {
                 System.out.print("  ");
             }
-//            part 3
+            int a = 'A' ;
+            char res = (char)a;
             for (int col = 1; col <=row ; col++) {
-                System.out.print("* ");
+                System.out.print (res +" ");
+                res++;
             }
-            System.out.println();
-        }
-//        part 4
-        for (int row = 1; row <=n ; row ++) {
-            for (int col = 1; col <= n-row+1; col++) {
-                System.out.print("* ");
+            int b = row +'A'-2 ;
+            char ress = (char)b;
+            for (int col = 1; col <= row-1 ; col++) {
+                System.out.print(ress +" ");
+                ress--;
             }
 
-//            part 5
-            for (int col = 1; col <= 2*(row-1) ; col++) {
-                System.out.print("  ");
-            }
-//            part 6
-            for (int col = 1; col <= n-row+1 ; col++) {
-                System.out.print("* ");
-            }
             System.out.println();
         }
-   }
+
+    }
 }
