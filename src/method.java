@@ -16,13 +16,74 @@ public class method {
     //multiply of two
     static void multiply(int x, int y){
         System.out.println("multiply = "+ (x*y));
+        return;
+
     }
 
-    public static void main(){
-        System.out.println(" Rahul ");
-        tableof2 ();        // invoke of function
-        sum(6,9);   // invoke of sum and passing argument
-        multiply(65,2); // passing argument in another by invoking/calling
+    //non void type or having some return
+    static int subtract(int x, int y){
+        return x-y;
+    }
 
+    //method overriding
+    static float avg(float a, float b, float c){
+        float res=(a+b+c/3);
+        return res;
+    }
+
+    static float avg(float a, float b, float c, float d){
+        float res=(a+b+c+d/4);
+        return res;
+    }
+
+//    Q1. Create a method to printwelcomemessege() to print a greeting
+    static void printwelcomemessege(){
+        System.out.println("Hello ! Welcome to coding world");
+    }
+
+//    Q2.create a method add a , b and c.
+        static float addition(int a, int b, float c){
+        float result = a+b+c;
+        return result;
+
+    }
+
+    //Q3.create a method if iseven() it returns true
+    static boolean iseven(int num){
+        if (num % 2 == 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+//    Q4. Create a method getmaximum(int a, int b) that returns a larger number
+    static int getmaximum(int a, int b){
+    if (a>b){
+        return a;
+    }else{
+        return b;
+    }
+    }
+
+    //Q5.
+
+    public static void main(){
+        int resgetmax = getmaximum(45,63);
+        System.out.println("Maximum number => "+resgetmax);
+
+        boolean res = iseven(45);
+        System.out.println(res);
+            printwelcomemessege();
+//        System.out.println(" Rahul ");
+//        tableof2 ();        // invoke of function
+//        sum(6,9);   // invoke of sum and passing argument
+//        multiply(65,2); // passing argument in another by invoking/calling
+//        int resultsubtract = subtract(67,19);
+//        System.out.println("subtract = "+ resultsubtract);
+//        float first = avg(2,3,4);
+//        float second = avg(4,5,2,3);
+//        System.out.println("first avg = "+ first);
+//        System.out.println("second average = "+ second);
     }
 }
