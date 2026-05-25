@@ -66,9 +66,16 @@ public class method {
     }
     }
 
-    //Q5.
+    //Q5.Create a method calculate percentage (obtained, total).
+    static float calculatepercentage(float obtained, int total){
+        float ans = (obtained / (float)total)*100 ;
+        ans = (float)Math.round(ans * 100) / 100;   //for roundoff upto 2
+        System.out.println("Percentage of student = "+ ans);
+        return ans;
+    }
 
     public static void main(){
+        calculatepercentage(450.5f,720);
         int resgetmax = getmaximum(45,63);
         System.out.println("Maximum number => "+resgetmax);
 
