@@ -74,14 +74,43 @@ public class method {
         return ans;
     }
 
-    public static void main(){
-        calculatepercentage(450.5f,720);
-        int resgetmax = getmaximum(45,63);
-        System.out.println("Maximum number => "+resgetmax);
+    //Q6. Create an overloaded method display() with one int parameter or one string parameter.
+    static void display(int x){
+        System.out.println("Integer = " + x);
+    }
 
-        boolean res = iseven(45);
-        System.out.println(res);
-            printwelcomemessege();
+    static void display(String y){
+        System.out.println("String = " + y);
+    }
+
+
+    //Q7. Write a method updatevalue(int y) and verify that original variable in main() does not change.
+    static int updatevalue(int y){
+        System.out.println("Before upadte = "+ y);
+        int updatedvalue = (y*10);
+        System.out.println("Updated value = "+ updatedvalue);
+        return y;
+    }
+
+    public static void main(){
+
+        display(45);
+        display("Rahul");
+
+//        Q7.Verification
+        int y=45;
+        System.out.println(y);
+        updatevalue(y);
+        System.out.println("Main function = "+ y);
+
+
+//        System.out.println("Main after updated = "+ y);
+//        calculatepercentage(450.5f,720);
+//        int resgetmax = getmaximum(45,63);
+//        System.out.println("Maximum number => "+resgetmax);
+//        boolean res = iseven(45);
+//        System.out.println(res);
+//            printwelcomemessege();
 //        System.out.println(" Rahul ");
 //        tableof2 ();        // invoke of function
 //        sum(6,9);   // invoke of sum and passing argument
