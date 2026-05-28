@@ -2,9 +2,36 @@ import javax.lang.model.element.NestingKind;
 import java.util.Scanner;
 
 public class StringBasics {
+//    Q1. Print all the characters of string.
+//    static void printstring(String str){
+//        for (int i = 0; i <=str.length()-1 ; i++) {
+//            char character = str.charAt(i);
+//            System.out.println ( "character at index "+ i +" -> "+ character);
+//        }
+//    }
+
+//      Q2.Count length of string without length().
+            static void Countlength(String str){
+
+        }
+
+
 
     static void main() {
-//
+//     Q1.   String newone = "Rahul";
+//        printstring(newone);
+
+
+
+
+
+
+
+
+//        String some ="Rahul Kumar";
+//        String newsome = some.replace('a','l');
+//        System.out.println(newsome);
+
 //        String name = "My name is rahul";   //Delimeter is space here
 //        String [] words = name.split(" ");
 ////        print via for each loop
