@@ -112,19 +112,19 @@ public class StringBasics {
 //        System.out.println(result);
 
 //        Q5. Check if String Contains Only Digits.
-        String str = "1234H5";
-        boolean isDigit = true;
-        for(int i = 0; i <= str.length()-1; i++) {
-            char ch = str.charAt(i);
-            if(ch < '0' || ch > '9') {
-                isDigit = false;
-                break;      //need to put here for optimisation
-            }
-        }
-        if(isDigit)
-            System.out.println("Only digits");
-        else
-            System.out.println("Contains other characters");
+//        String str = "1234H5";
+//        boolean isDigit = true;
+//        for(int i = 0; i <= str.length()-1; i++) {
+//            char ch = str.charAt(i);
+//            if(ch < '0' || ch > '9') {
+//                isDigit = false;
+//                break;      //need to put here for optimisation
+//            }
+//        }
+//        if(isDigit)
+//            System.out.println("Only digits");
+//        else
+//            System.out.println("Contains other characters");
 
 
 
