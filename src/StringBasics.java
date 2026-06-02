@@ -2,6 +2,7 @@ import javax.lang.model.element.NestingKind;
 import java.util.Scanner;
 
 public class StringBasics {
+
 //    Q1. Print all the characters of string.
 //    static void printstring(String str){
 //        for (int i = 0; i <=str.length()-1 ; i++) {
@@ -57,6 +58,88 @@ public class StringBasics {
 
 
     static void main() {
+
+//        Practice
+//        Q1. count the number of consonants
+//        String str = "Hello World";
+//        int count = 0;
+//        for(int i = 0; i <= str.length()-1 ; i++) {
+//            char ch = Character.toLowerCase(str.charAt(i));
+//
+//            if(ch >= 'a' && ch <= 'z') {
+//                if(ch != 'a' && ch != 'e' &&
+//                        ch != 'i' && ch != 'o' &&
+//                        ch != 'u') {
+//                    count++;
+//                }
+//            }
+//        }
+//
+//        System.out.println("Consonants = " + count);
+
+//        Q2.Convert String to Uppercase Without Using Method.
+//            String str1 = "hello";
+//            String result = " ";
+//            for(int i = 0; i <= str1.length()-1; i++) {
+//                char ch = str1.charAt(i);
+//                if(ch >= 'a' && ch <= 'z') {
+//                    ch = (char)(ch - 32);      // because ascii value of A=65 and a=97
+//                }
+//                result = result+ ch;
+//            }
+//            System.out.println(result);
+
+        //Q3. Find Frequency of a Character.
+//        String str = "programming";
+//        char target = 'm';
+//        int count = 0;
+//        for(int i = 0; i <= str.length()-1; i++) {
+//            if(str.charAt(i) == target) {
+//                count++;
+//            }
+//        }
+//        System.out.println("Frequency = " + count);
+
+        //Q4.Remove All Spaces from String.
+//        String str = "Java Is Easy";
+//        String result = "";
+//        for(int i = 0; i <= str.length()-1; i++) {
+//            char ch = str.charAt(i);
+//            if(ch != ' ') {
+//                result += ch;
+//            }
+//        }
+//        System.out.println(result);
+
+//        Q5. Check if String Contains Only Digits.
+        String str = "1234H5";
+        boolean isDigit = true;
+        for(int i = 0; i <= str.length()-1; i++) {
+            char ch = str.charAt(i);
+            if(ch < '0' || ch > '9') {
+                isDigit = false;
+                break;      //need to put here for optimisation
+            }
+        }
+        if(isDigit)
+            System.out.println("Only digits");
+        else
+            System.out.println("Contains other characters");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //        System.out.println(ispalindrome("MooM"));
 
 //        System.out.println(reverse("RAHUL"));
