@@ -11,13 +11,59 @@ public class StringBasics {
 //    }
 
 //      Q2.Count length of string without length().
-            static void Countlength(String str){
+//            static int Countlength(String str ){
+//               char [] arr= str.toCharArray();
+//               int length =arr.length;
+//               return length;
+//        }
 
-        }
+//        Q3. Print vowels in a string.
+//    static int Countvowel(String str){
+//           int count=0;
+//        for (int i = 0; i <=str.length()-1 ; i++) {
+//            char ch = str.charAt(i);
+//            if (ch =='a' || ch=='e' || ch=='i' || ch=='o' || ch =='u' ||ch =='A' || ch=='E' || ch=='I' || ch=='O' || ch =='U'){
+//                count = count+1;
+//            }
+//        }
+//        return count;
+//    }
 
+//    Q4. Reverse a string. (with  very common approach)
+//    static String reverse(String str){
+//        String reverse ="";
+//        int n = str.length();
+//        for (int i = n-1; i >= 0 ; i--) {
+//            char ch = str.charAt(i);
+//            reverse=reverse+ch;
+//        }
+//        return reverse;
+//    }
+//
+//    //Q5. Check string is palindrome or not . ("NOON"=="NOON")
+//
+//    static boolean ispalindrome(String str){
+//        String originalString = str;
+//        String reverseString = reverse(originalString);
+//        for (int i = 0; i <=originalString.length()-1 ; i++) {
+//            char ch1 = originalString.charAt(i);
+//            char ch2 = reverseString.charAt(i);
+//            if (ch1 != ch2){
+//                return false;
+//            }
+//        }
+//        return true;
+//    }
 
 
     static void main() {
+//        System.out.println(ispalindrome("MooM"));
+
+//        System.out.println(reverse("RAHUL"));
+
+//        System.out.println(Countvowel("Rahul Kumar"));
+
+//        System.out.println(Countlength("RahulKumar"));
 //     Q1.   String newone = "Rahul";
 //        printstring(newone);
 
