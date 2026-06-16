@@ -14,18 +14,18 @@ public class Main {
 //        Circle c = new Circle();
 //        c.draw();
         //or
-        //upcasting
+
+        //upcasting  //downcasting
         Circle c = new Circle();
         dodrawingstuff(c);
         }
 
-    //downcasting
 
 
         public static void  dodrawingstuff(Shape s){
         s.draw();   // polymorphic
 
-            Circle c = (Circle)s;       //downcasting
+            Circle c = (Circle)s;      //downcasting
             c.personal();
     }
 }
